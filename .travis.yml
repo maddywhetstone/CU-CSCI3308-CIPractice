@@ -1,3 +1,4 @@
 language: c
-install: make get-deps
-target: test
+install: make dep
+script: make
+compiler: gcc
