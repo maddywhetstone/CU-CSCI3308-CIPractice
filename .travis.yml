@@ -1,5 +1,5 @@
 language: c
-sudo: required 
+sudo: enabled
 install: make dep
 script: make
 compiler: gcc
