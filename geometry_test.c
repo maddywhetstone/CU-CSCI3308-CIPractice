@@ -54,6 +54,27 @@ START_TEST(test_2d_eq)
 }
 END_TEST
 
+//added test
+START_TEST(test_2d_area_triangle)
+{
+	coord_2d_t a;
+	coord_2d_t b;
+	coord_2d_t c;
+	
+	a.x = b.x = c.x = 0;
+	a.y = b.y = c.y = 0;
+	ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0.0);
+	
+	a.x = 0;
+	a.y = 0;
+	b.x = 1;
+	b.y = 0;
+	c.x = 1;
+	c.y = 0;
+	ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0.5);
+}
+END_TEST
+
 /* coord_2d_dist Test */
 START_TEST(test_2d_dist)
 {
