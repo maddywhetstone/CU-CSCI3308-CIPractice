@@ -1,5 +1,5 @@
 language: c
 sudo: required
 install: make dep
-script: make
+script: make test
 compiler: gcc
